@@ -1,0 +1,30 @@
+.manga {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 20em;
+}
+.manga li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .90em;
+    padding: .3em 0;
+    height: auto;
+    border-radius: 4px;
+}
+.manga li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+}
+.manga li.selected {
+    background-color: #CFD8DC;
+    color: white;
+}
+.manga li.selected:hover {
+    background-color: #BBD8DC;
+    color: white;
+}
+

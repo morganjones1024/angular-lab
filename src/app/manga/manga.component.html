@@ -1,0 +1,24 @@
+<ul class="manga">
+    <li *ngFor="let current of manga" (click)="onSelect(current)">
+        <app-manga-detail [manga]="current"></app-manga-detail>
+    </li>
+</ul> 
+
+<div *ngIf="selectedManga">
+ 
+    <h2>{{selectedManga.title}} Details:</h2>
+    <div><span>Release Year: {{selectedManga.release}}</span></div>
+    <div><span>Author: </span>{{selectedManga.author}}</div>
+    <div>
+      <label>Sales (in Millions):
+        <span>{{selectedManga.sales}}</span>
+      </label>
+    </div>
+    <div>
+        <label>Change Title: 
+    <input [(ngModel)]="selectedManga.title" placeholder="title"/>
+         </label>
+    </div>
+  
+</div>
+
